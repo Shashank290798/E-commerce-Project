@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* body{
+    height:100vh;
+} */
+header {
+    text-align: center;
+    margin:0;
+    padding:0px;
+    padding-bottom:20px;
+    background:black;
+    color: whitesmoke;
+}
+
+#cart{
+    position: fixed;
+    height: 95%;
+}
+header h1{
+    padding: 60px;
+    font-size:100px;
+}
+header ul{
+    display:flex;
+    padding:10px;
+    font-size:18px;
+    font-weight:100;
+    justify-content: left;
+    list-style-type: none;
+    border-bottom:0.1rem solid goldenrod;
+    position: fixed;
+    top: 0%;
+    background: rebeccapurple;
+    width: 100%;
+    z-index: 1;
+}
+header li{
+    margin:0px 40px;
+}
+header li a{
+    text-decoration: none;
+    color:gold;
+}
+header h6{
+    padding:10px;
+    font-size:20px;
+    font-weight: normal;;
+    border-bottom: 0.1rem solid white;
+}
+header h6 a {
+    text-decoration: none;
+    color:white;
+}
+header .latest-album{
+    display:block;
+    border:1px solid purple;
+    padding:15px 30px;
+    font-size:23px;
+    font-weight: 100;
+    margin:10px auto;
+    background: inherit;
+    cursor: pointer;
+    color:white;
+}
+section h2{
+    font-family: 'Times New Roman', Times, serif;
+    text-align:center;
+    padding:30px;
+    font-size:50px;
+}
+.container{
+    max-width:900px;
+    margin:0 auto;
+    padding:20px 30px;
+}
+#music-content{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+#music-content div{
+    margin:30px;
+}
+#music-content div h3{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+#music-content .prod-details{
+    display: flex;
+    margin: 8px;
+    align-items: center;
+    justify-content: space-between;
+}
+#music-content .shop-item-button{
+    cursor:pointer;
+    padding:8px;
+    color:white;
+    border:none;
+    font-size:15px;
+    font-weight: bold;
+    border-radius: 4%;
+    background: rebeccapurple;
+}
+#music-content .shop-item-button:hover, #merch-content .shop-item-button:hover{
+    background: #0eabdf;
+}
+#merch-content{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+#merch-content div{
+    margin:30px;
+}
+#merch-content div h3{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+#merch-content .prod-details{
+    display:flex;
+    margin:8px;
+    align-items:center;
+    justify-content: space-between;
+}
+#merch-content .shop-item-button{
+    cursor:pointer;
+    padding:8px;
+    color:white;
+    border:none;
+    font-size:15px;
+    font-weight: bold;
+    border-radius: 4%;
+    background: rebeccapurple;
+}
+/* About */
+#about{
+    max-width:900px;
+    margin:0 auto;
+    font-size: 22px;
+}
+#about h3{
+    text-align: center;
+    font-size:25px;
+    margin:20px;
+}
+#about div{
+  display:flex; 
+}
+#about img{
+    float:left;
+    margin:20px 50px;
+    border-radius: 50%;
+    width:200px;
+    height:200px;
+}
+#about p{
+    font-size:17px;
+    margin:20px;
+    color:#777;
+}
+#container{
+    position:fixed;
+    bottom:10px;
+    right:10px;
+}
+.image-container{
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+.prod-images{
+    transform-origin: center center;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    padding:0px;
+    margin:0px;
+    transition: ease-in 0.5s;
+    filter: brightness(100%);
+}
+.prod-images:hover{
+    transform: scale(1.5);
+    filter: brightness(130%);
+}
+header ul a{
+    color:white;
+    text-decoration:none;
+    cursor: pointer;
+}
+
+.cart-holder{
+    border:2px solid black;
+    border-radius: 7px;;
+    padding:2px 20px;
+    position: absolute;
+    right: 2%;
+}
+.cart-number{
+    position:absolute;
+    color:black;
+    font-size: 20px;
+    top:-10px;
+    right:-15px;
+}
+
+@media(max-width:600px){
+    header li{
+        margin:0px 20px;
+    }
+}
+#cart h2{
+    margin:20px 0px;
+    padding:0;
+}
+
