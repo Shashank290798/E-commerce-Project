@@ -42,6 +42,7 @@ parentContainer.addEventListener('click',(e)=>{
         setTimeout(()=>{
             notification.remove();
         },2500)
+    
     }
     
 })
