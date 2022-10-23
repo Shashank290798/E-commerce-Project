@@ -13,8 +13,8 @@ header {
     margin:0;
     padding:0px;
     padding-bottom:20px;
-    background:black;
-    color: whitesmoke;
+    background:white;
+    color: rebeccapurple;
 }
 
 #cart{
@@ -22,8 +22,8 @@ header {
     height: 95%;
 }
 header h1{
-    padding: 60px;
-    font-size:100px;
+    padding: 50px;
+    font-size:120px;
 }
 header ul{
     display:flex;
@@ -58,14 +58,14 @@ header h6 a {
 }
 header .latest-album{
     display:block;
-    border:1px solid purple;
+    border:1px solid white;
     padding:15px 30px;
     font-size:23px;
     font-weight: 100;
     margin:10px auto;
     background: inherit;
     cursor: pointer;
-    color:white;
+    color:rebeccapurple;
 }
 section h2{
     font-family: 'Times New Roman', Times, serif;
@@ -78,15 +78,15 @@ section h2{
     margin:0 auto;
     padding:20px 30px;
 }
-#music-content{
+#shopping-content{
     display:flex;
     flex-wrap: wrap;
     justify-content:space-around;
 }
-#music-content div{
+#shopping-content div{
     margin:30px;
 }
-#music-content div h3{
+#shopping-content div h3{
     display: block;
     width: 100%;
     text-align: center;
@@ -94,13 +94,13 @@ section h2{
     color: #333;
     margin-bottom: 15px;
 }
-#music-content .prod-details{
+#shopping-content .prod-details{
     display: flex;
     margin: 8px;
     align-items: center;
     justify-content: space-between;
 }
-#music-content .shop-item-button{
+#shopping-content .shop-item-button{
     cursor:pointer;
     padding:8px;
     color:white;
@@ -110,18 +110,18 @@ section h2{
     border-radius: 4%;
     background: rebeccapurple;
 }
-#music-content .shop-item-button:hover, #merch-content .shop-item-button:hover{
-    background: #0eabdf;
+#shopping-content .shop-item-button:hover, #women-section-content .shop-item-button:hover{
+    background: green;
 }
-#merch-content{
+#women-section-content{
     display:flex;
     flex-wrap: wrap;
     justify-content:space-around;
 }
-#merch-content div{
+#women-section-content div{
     margin:30px;
 }
-#merch-content div h3{
+#women-section-content div h3{
     display: block;
     width: 100%;
     text-align: center;
@@ -129,13 +129,13 @@ section h2{
     color: #333;
     margin-bottom: 15px;
 }
-#merch-content .prod-details{
+#women-section-content .prod-details{
     display:flex;
     margin:8px;
     align-items:center;
     justify-content: space-between;
 }
-#merch-content .shop-item-button{
+#women-section-content .shop-item-button{
     cursor:pointer;
     padding:8px;
     color:white;
@@ -200,6 +200,12 @@ header ul a{
     text-decoration:none;
     cursor: pointer;
 }
+.rows{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #ce6fe663;
+}
 
 .cart-holder{
     border:2px solid black;
@@ -225,4 +231,104 @@ header ul a{
     margin:20px 0px;
     padding:0;
 }
+/* .cart-row{
+    font-size:18px;
+    display:flex;
+}
+.cart-header{
+    font-size:1.2rem;
+    font-weight: bold;
+}
+.cart-item{
+    width:45%;
+}
+.cart-img{
+    width:80px;
+    border-radius:8%;
+    margin-right:20px;
+}
+.cart-price{
+    width:20%;
+}
+.cart-quantity{
+    width:35%;
+}
+.cart-column{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.cart-quantity input{
+    width:40px;
+    height:30px;
+    border:1px solid rgb(0, 204, 255) ;
+    border-radius:8%;
+    outline:none;
+    text-align:center;
+    margin-right:20px;
+}
+.cart-quantity button{
+    color:white;
+    font-weight: bold;
+    background: rgb(231, 76, 76);
+    cursor: pointer;
+    border:none;
+    border-radius:8%;
+    height:30px;
+    outline:none;
+    padding: 0px 7px;
+}
+.cart-quantity button:hover{
+    background: rgb(218, 37, 37);;
+}
+.cart-total{
+    display:flex;
+    flex-direction: row-reverse;
+    font-size:1.2rem;
+    margin:20px;
+}
+.cart-total .total-title{
+    margin-right:10px;
+    font-size:1.5rem;
+} */
 
+/* .purchase-btn:hover{
+    background-color:#18acdd;
+} */
+footer{
+    display:flex;
+    margin-top:60px;
+    padding:10px;
+    background:none;
+}
+footer .footer-title{
+    text-align: center;
+    color:rebeccapurple;
+    width:50%;
+    font-size:50px;
+    font-weight:bold;
+    margin:0 auto;
+}
+footer .footer-icons{
+    width:50%;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+}
+.footer-icons ul{
+    list-style-type: none;
+    display:flex;
+}
+.footer-icons li{
+    padding:10px;
+    margin:0px 20px;
+}
+.footer-icons li:hover{
+    background:white;
+}
+.footer-icons img{
+    width:30px;
+}
